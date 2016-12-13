@@ -1,0 +1,128 @@
+package com.example.control;
+
+import java.net.InetAddress;
+import java.net.Socket;
+
+import com.example.control.custom.ImageBtn;
+import com.example.control.net.Connecter;
+import com.example.control.net.ConnecterPool;
+import com.example.control.utils.INetCallBack;
+import com.example.control.utils.MediaTool;
+import com.example.control.utils.ProjectEnvironment;
+import com.example.control.utils.RemoteOperateImpl;
+import com.example.control.utils.SharePersistent;
+import com.example.control.utils.T;
+import com.example.control.utils.Utils;
+
+import android.app.Activity;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnDismissListener;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Toast;
+
+/**
+ * @author Administrator
+ *
+ */
+public class MainActivity extends Activity implements OnClickListener, INetCallBack {
+
+	private Context _context;
+	private Button btnButton;
+	private ImageBtn imageBtn00;
+	private ImageBtn imageBtn01;
+	private ImageBtn imageBtn02;
+	
+	private RemoteOperateImpl mRemoteOperateImpl;
+	private Connecter mConnector;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        initView();
+        
+        
+    }
+
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		mConnector = ConnecterPool.getConnectorByKey(ConnecterPool.STRING_CKEY);
+		if (null != mConnector) {
+			mRemoteOperateImpl = new RemoteOperateImpl(mConnector, this);
+		} else {
+			Toast.makeText(this,
+					getResources().getString(R.string.app_lost_host),
+					Toast.LENGTH_SHORT).show();
+		}
+		ProjectEnvironment.BOOLEAN_LOCK_KEYBOAED = true;
+	}
+
+	private void initView() {
+		// TODO Auto-generated method stub
+		btnButton=(Button)findViewById(R.id.button1);
+		imageBtn00=(ImageBtn)findViewById(R.id.imagebtn_main_00);
+		imageBtn01=(ImageBtn)findViewById(R.id.imagebtn_main_01);
+		imageBtn02=(ImageBtn)findViewById(R.id.imagebtn_main_02);
+		
+		btnButton.setOnClickListener(this);
+		imageBtn00.setImageResource(R.drawable.computer);
+		imageBtn00.setTextViewText("ËøÆÁ");
+		imageBtn00.setOnClickListener(this);
+		imageBtn01.setImageResource(R.drawable.computer);
+		imageBtn01.setTextViewText("ËøÆÁ");
+		imageBtn01.setOnClickListener(this);
+		imageBtn02.setImageResource(R.drawable.computer);
+		imageBtn02.setTextViewText("ËøÆÁ");
+		imageBtn02.setOnClickListener(this);
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		switch (v.getId()) {
+		case R.id.button1:
+			Utils.startOtherActivity(MainActivity.this, SettingActivity.class);
+			break;
+		case R.id.imagebtn_main_00:
+			T.showShort(MainActivity.this, "00");
+			mRemoteOperateImpl.sendCommand(ProjectEnvironment.STRING_COMMAND_LOCK_SCREEN);
+			break;
+		case R.id.imagebtn_main_01:
+			T.showShort(MainActivity.this, "01");
+			break;
+		case R.id.imagebtn_main_02:
+			T.showShort(MainActivity.this, "02");
+			break;
+
+		default:
+			break;
+		}
+	}
+
+	@Override
+	public void OnStart() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void OnFinish() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void OnIntercepted(String source) {
+		// TODO Auto-generated method stub
+		Utils.doNetLost(this);
+	}
+}

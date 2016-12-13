@@ -1,0 +1,6 @@
+1427249971133	Move file
+1427250150778	Extracts string '主机IP' into R.string.zjIP
+1427250898002	Extracts string '端口:' into R.string.port
+1427252001519	Extracts string '确认' into R.string.OK
+1427257704029	Extracts string '连接' into R.string.Connect
+1427257732317	Extracts string '获取PC端' into R.string.getPC

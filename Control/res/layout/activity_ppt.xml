@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical">
+	<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:textColor="@color/custom_red"
+		    android:textSize="18sp"
+		    android:text="请先打开PPT!" />
+
+	</RelativeLayout>
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:layout_weight="9">
+		<RelativeLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"
+	        android:layout_weight="1">
+
+			<ImageView
+			    android:id="@+id/iv_ppt_PlayOrEscape"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerHorizontal="true"
+			    android:layout_centerVertical="true"
+			    android:src="@drawable/video_clip" />
+
+		</RelativeLayout>
+		<LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"
+	        android:orientation="horizontal"
+	        android:layout_weight="1">
+			<RelativeLayout 
+		        android:layout_width="1dp"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+
+				<ImageView
+				    android:id="@+id/iv_ppt_up"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_centerHorizontal="true"
+				    android:layout_centerVertical="true"
+				    android:src="@drawable/left_arrow" />
+
+			</RelativeLayout>
+			<RelativeLayout 
+		        android:layout_width="1dp"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1">
+
+				<ImageView
+				    android:id="@+id/iv_ppt_down"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_centerHorizontal="true"
+				    android:layout_centerVertical="true"
+				    android:src="@drawable/right_arrow" />
+
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

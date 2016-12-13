@@ -1,0 +1,235 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8">
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <com.example.control.custom.ImageBtn
+                    android:id="@+id/imagebtn_main_00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.control.custom.ImageBtn>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"  >
+                <com.example.control.custom.ImageBtn
+                    android:id="@+id/imagebtn_main_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.control.custom.ImageBtn>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <com.example.control.custom.ImageBtn
+                    android:id="@+id/imagebtn_main_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.control.custom.ImageBtn>
+            </RelativeLayout>
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <com.example.control.custom.ImageBtn
+                    android:id="@+id/imagebtn_main_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.control.custom.ImageBtn>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"  >
+                <com.example.control.custom.ImageBtn
+                    android:id="@+id/imagebtn_main_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.control.custom.ImageBtn>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <com.example.control.custom.ImageBtn
+                    android:id="@+id/imagebtn_main_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.control.custom.ImageBtn>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <com.example.control.custom.ImageBtn
+                    android:id="@+id/imagebtn_main_06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.control.custom.ImageBtn>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"  >
+                <com.example.control.custom.ImageBtn
+                    android:id="@+id/imagebtn_main_07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.control.custom.ImageBtn>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <com.example.control.custom.ImageBtn
+                    android:id="@+id/imagebtn_main_08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.control.custom.ImageBtn>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <com.example.control.custom.ImageBtn
+                    android:id="@+id/imagebtn_main_09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.control.custom.ImageBtn>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"  >
+                <com.example.control.custom.ImageBtn
+                    android:id="@+id/imagebtn_main_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.control.custom.ImageBtn>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <com.example.control.custom.ImageBtn
+                    android:id="@+id/imagebtn_main_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.control.custom.ImageBtn>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <com.example.control.custom.ImageBtn
+                    android:id="@+id/imagebtn_main_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.control.custom.ImageBtn>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"  >
+                <com.example.control.custom.ImageBtn
+                    android:id="@+id/imagebtn_main_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.control.custom.ImageBtn>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <com.example.control.custom.ImageBtn
+                    android:id="@+id/imagebtn_main_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.example.control.custom.ImageBtn>
+            </RelativeLayout>
+        </LinearLayout>
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+   <!--  <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/Connect" /> -->
+    <TextView android:id="@+id/tvbtnConnent"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/function_bg"
+        android:text="@string/Connect"
+        android:gravity="center"  />
+    <!-- <Button
+        android:id="@+id/btnPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/getPC" /> -->
+    <TextView android:id="@+id/tvbtnPC"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/function_bg"
+        android:text="@string/getPC"
+        android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Watch Dogs</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="zjIP">主机IP:</string>
+    <string name="port">端口:</string>
+    <string name="OK">确认</string>
+    <string name="setting_activity_setting_inputrtip">请输入正确的ip</string>
+    <string name="setting_activity_setting_port">请设定与主机约定正确端口号（1024-65535）</string>
+    <string name="app_lost_host">断开连接</string>
+    <string name="content">连接中</string>
+    <string name="contenting">正在连接您设置的电脑</string>
+    <string name="mouse_activity_net">没有连接到电脑 </string>
+    <string name="content_success">连接成功</string>
+    <string name="content_fail">连接失败，请检查你的电脑端设置！</string>
+    <string name="Connect">连接</string>
+    <string name="getPC">获取PC端</string>
+    <string name="title_activity_ppt">PPTActivity</string>
+
+</resources>
